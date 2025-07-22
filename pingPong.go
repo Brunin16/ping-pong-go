@@ -27,6 +27,5 @@ func printMessage(message <-chan string) {
 }
 
 func main() {
-	go printMessage(createMessage())
-	select {}
+	printMessage(createMessage())
 }
